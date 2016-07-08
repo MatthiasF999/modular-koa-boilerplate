@@ -9,7 +9,7 @@
     "prepublish": "npm run compile",
     "test": "node_modules/.bin/mocha --compilers js:babel-register --require babel-polyfill",
     "cover": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha test -- --compilers js:babel-register --require babel-polyfill",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coverage": "npm run cover -- --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage"
   },
   "bin": {
     "PROJECTNAME": "dist/index.js"
