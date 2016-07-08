@@ -5,4 +5,4 @@ node_js:
 sudo: false # makes tests faster
 
 after_success:
-- npm run coveralls
+- npm run coverage
