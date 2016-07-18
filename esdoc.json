@@ -8,7 +8,7 @@
 	  "type": "mocha",
 	  "source": "./test"
 	},
-	"title": "PROJECTNAME",
+	"title": "modular-koa-boilerplate",
 	"lint": true,
   "index": "./README.md",
   "package": "./package.json",

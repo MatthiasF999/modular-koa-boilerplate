@@ -6,7 +6,7 @@
 		"no-console": "off",
 		"max-len": ["error", {
 			"ignoreComments": true,
-			"ignorePattern": "(let|const\\s.*\\s=\\s'.*';)|(it\\('.*',)"
+			"ignorePattern": "(.*\\s=\\s['`].*['`];)|(it\\('.*',)"
 		}]
 	},
 	"env": {
